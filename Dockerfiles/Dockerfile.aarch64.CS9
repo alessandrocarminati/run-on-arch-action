@@ -1,5 +1,4 @@
-FROM quay.io/centos/centos:stream9-development
-
+FROM quay.io/centos/centos:stream9@sha256:9c69c428384965740f083f05aa9ace774d6387a415889e2a489af5d7454651cf
 
 COPY ./run-on-arch-install.sh /root/run-on-arch-install.sh
 RUN chmod +x /root/run-on-arch-install.sh && /root/run-on-arch-install.sh
